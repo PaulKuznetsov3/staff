@@ -7,7 +7,7 @@ import Filter from '../Filteres';
 import AddHeader from '../AddHeader';
 import { getStaffs } from '../../slices/staffSlice/staffSlice';
 import { toast } from 'react-toastify';
-import { handleFilterStaffs } from '../../utils/getFaff';
+import { handleFilterStaffs, handleSortStaffs } from '../../utils/getFaff';
 
 
 const List = () => {
@@ -31,20 +31,6 @@ const List = () => {
     setSortStaffs(value);
   };
 
- 
-  // сортировка
-  const handleSortStaffs = (value) => {
-    const sortedStaffs = [...staffs];
-    switch (value) {
-    case 'name':
-      return sortedStaffs.sort((a, b) => a.name.localeCompare(b.name));
-    case 'birthday':
-      return sortedStaffs.sort((a, b) => new Date(b.birthday) - new Date(a.birthday));
-    default:
-      return staffs;
-    }
-  };
-    
 
   useEffect(() => {
     // получение сотрудников
@@ -62,7 +48,7 @@ const List = () => {
     fetchData();
   }, [ dispatch ]);
 
-  const sortedStaffs = handleSortStaffs(sortStaffs);
+  const sortedStaffs = handleSortStaffs(sortStaffs, staffs);
 
   const filteredStaffs = handleFilterStaffs(filterStaffs, sortedStaffs);
 
