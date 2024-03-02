@@ -5,10 +5,8 @@ import cls from './style.module.scss';
 import InputMask from 'react-input-mask';
 
 
-const Form = (props) => {
+const Form = ({ staff, handleSave, isSubmitting }) => {
 
-  const { staff, handleSave, isSubmitting } = props;
-  
   const optionsSelect = [
     { value: 'cook', label: 'повар' },
     { value: 'waiter', label: 'официант' },

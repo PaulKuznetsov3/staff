@@ -2,9 +2,7 @@ import Checkbox from '../UI/Checkbox';
 import Select from '../UI/Select';
 import cls from './style.module.scss';
 
-const Filter = (props) => {
-    
-  const { filterSelect, handleCheckIsArchive }= props;
+const Filter = ({ filterSelect, handleCheckIsArchive }) => {
 
   const options = [
     { value: 'cook', label: 'повар' },

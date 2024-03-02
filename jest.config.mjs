@@ -16,6 +16,7 @@ const config = {
 
   // Automatically clear mock calls, instances, contexts and results before every test
   clearMocks: true,
+  testEnvironment: "jsdom",
 
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
@@ -145,7 +146,7 @@ const config = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "jsdom",
+ 
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},

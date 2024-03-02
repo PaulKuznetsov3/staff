@@ -9,8 +9,6 @@ const ProfilePage = () => {
 
   const staff = useSelector((state) => state.staffs.staffs.find(staff => staff.id === id));
 
-  console.log('staff', staff);
-
   return (
     <div className={cls.container}>
       <FormProfile staff={staff}/>

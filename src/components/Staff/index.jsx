@@ -2,6 +2,7 @@ import cls from './style.module.scss';
 import { useNavigate } from 'react-router-dom';
 
 const Staff = ({ staff }) => {
+  
   const navigate = useNavigate();
   
   const handleProfileClick = () => {

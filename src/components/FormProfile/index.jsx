@@ -5,9 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Form from '../Form';
 
-const FormProfile = (props) => {
-
-  const { staff } = props;
+const FormProfile = ({ staff }) => {
   
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);

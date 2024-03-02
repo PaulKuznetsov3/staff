@@ -9,7 +9,6 @@ export const staffsSlice = createSlice({
   initialState,
   reducers: {
     getStaffs: (state, action) => {
-      console.log(action);
       state.staffs = action.payload;
     },
   },
