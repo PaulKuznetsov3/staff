@@ -1,5 +1,5 @@
 {
-  "homepage": "https://paulkuznetsov3.github.io/staff/",
+  "homepage": "https://paulKuznetsov3.github.io/staff",
   "name": "staff",
   "private": true,
   "version": "0.0.0",
@@ -11,6 +11,7 @@
     "preview": "vite preview",
     "server": "json-server --watch ./src/api/db.json --port 5000",
     "test": "jest --config ./jest.config.mjs",
+    "homepage": "https://paulKuznetsov3.github.io/staff",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
