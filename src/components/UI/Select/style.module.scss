@@ -1,0 +1,25 @@
+select {
+    appearance: none; /* Убирает стандартные стили элемента на некоторых браузерах */
+    padding: 10px; /* Поля вокруг текста */
+    font-size: 16px; /* Размер шрифта */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Закругление углов */
+    background-color: #f7f7f7; /* Цвет фона */
+    color: #333; /* Цвет текста */
+    width: 200px; /* Ширина select */
+    /* Добавляем стрелочку для элемента select */
+    background-image: linear-gradient(45deg, transparent 50%, #333 50%), linear-gradient(135deg, #333 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+    appearance: none; /* Убираем стандартные стрелки */
+  }
+  
+  /* Стили для опций внутри select */
+  select option {
+    padding: 10px; /* Поля вокруг текста */
+    font-size: 16px; /* Размер шрифта */
+    border: none; /* Убираем границу */
+    background-color: #f7f7f7; /* Цвет фона */
+    color: #333; /* Цвет текста */
+  }

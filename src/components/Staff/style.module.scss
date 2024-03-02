@@ -1,0 +1,22 @@
+.container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .name, .role, .phone {
+    margin-top: 10px;
+  }
+  
+  strong {
+    margin-right: 5px;
+    font-weight: bold;
+  }
