@@ -1,5 +1,4 @@
 {
-  "homepage": "https://paulkuznetsov3.github.io/staff/",
   "name": "staff",
   "private": true,
   "version": "0.0.0",
@@ -11,8 +10,6 @@
     "preview": "vite preview",
     "server": "json-server --watch ./src/api/db.json --port 5000",
     "test": "jest --config ./jest.config.mjs",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
@@ -47,7 +44,6 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "react-test-renderer": "^18.2.0",
-    "ts-jest": "^29.1.2",
     "vite": "^5.1.4"
   }
 }
