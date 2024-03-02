@@ -1,6 +1,7 @@
 .container {
     display: flex;
     justify-content: space-around;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
