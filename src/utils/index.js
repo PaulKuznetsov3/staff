@@ -22,7 +22,7 @@ export const handleSortStaffs = (value, staffs) => {
   case 'birthday':
     return sortedStaffs.sort((a, b) => new Date(b.birthday) - new Date(a.birthday));
   default:
-    return staffs;
+    return sortedStaffs;
   }
 };
   
