@@ -41,12 +41,12 @@
       "birthday": "26.01.1982"
     },
     {
-      "id": "6",
-      "name": "Кира Колесникова",
-      "isArchive": true,
-      "role": "cook",
+      "name": "Aолесникова",
       "phone": "+7 (929) 592-3637",
-      "birthday": "25.02.1972"
+      "birthday": "",
+      "role": "",
+      "isArchive": false,
+      "id": "6"
     },
     {
       "id": "7",
@@ -158,6 +158,14 @@
       "phone": "+7 (232) 342-34-42",
       "birthday": "42.35.4345",
       "role": "waiter",
+      "isArchive": false
+    },
+    {
+      "id": "94d3",
+      "name": "ваывпп",
+      "phone": "+7 (234) 234-23-4_",
+      "birthday": "23.42.3423",
+      "role": "driver",
       "isArchive": false
     }
   ]

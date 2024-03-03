@@ -1,10 +1,13 @@
 module.exports = {
-  "parser": "babel-eslint",
+ 
+  parserOptions: {
+    parser: '@babel/eslint-parser'
+  },
   root: true,
   env: {
     browser: true,
     es2020: true,
-    "jest/globals": true
+    jest: true
   },
   extends: [
     'eslint:recommended',

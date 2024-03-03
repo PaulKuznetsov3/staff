@@ -6,9 +6,7 @@ import Sort from '../Sort';
 import Filter from '../Filteres';
 import AddHeader from '../AddHeader';
 import { getStaffs } from '../../slices/staffSlice/staffSlice';
-import { toast } from 'react-toastify';
-import { handleFilterStaffs, handleSortStaffs } from '../../utils/index';
-import axios from 'axios';
+import { handleFilterStaffs, handleSortStaffs, getData } from '../../utils/index';
 
 
 const List = () => {
@@ -32,26 +30,17 @@ const List = () => {
     setSortStaffs(value);
   };
 
-     // получение сотрудников
-     const getData = async () => {
-      try {
-        const response = await axios.get('http://localhost:5000/staffs');
-        dispatch(getStaffs(response.data));
-      } catch (error) {
-        console.log(error);
-        toast.error('Ошибка. Попробуйте еще раз.');
-      }
-    };
-
   useEffect(() => {
-    getData();
-  }, [ dispatch ]);
+    getData().then((data) => {
+      dispatch(getStaffs(data));
+    });
+  }, [dispatch]);
 
   const sortedStaffs = useMemo(() => handleSortStaffs(sortStaffs, staffs), [sortStaffs, staffs]);
 
   const filteredStaffs = useMemo(() => handleFilterStaffs(filterStaffs, sortedStaffs), [filterStaffs, sortedStaffs]);
 
-  const resultStaffs = useMemo(() => isArchiveStaff === false ? filteredStaffs : filteredStaffs.filter(staff => staff.isArchive === true), [filteredStaffs, isArchiveStaff]);
+  const resultStaffs = useMemo(() => isArchiveStaff === false ? filteredStaffs : filteredStaffs?.filter(staff => staff?.isArchive === true), [filteredStaffs, isArchiveStaff]);
 
   return (
     <div className={cls.container}>

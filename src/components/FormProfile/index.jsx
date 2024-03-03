@@ -28,11 +28,10 @@ const FormProfile = ({ staff }) => {
   return (
     <div className={cls.container}>
       <div className={cls.header}>
-      <h2>Профиль</h2>
-      <button className={cls.camback} onClick={() => navigate('/')}>
+        <h2>Профиль</h2>
+        <button className={cls.camback} onClick={() => navigate('/')}>
         назад
-      </button>
-   
+        </button>
       </div>
       <Form staff={staff} handleSave={handleSave} isSubmitting={isSubmitting}/>
     </div>
