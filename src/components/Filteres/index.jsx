@@ -5,10 +5,10 @@ import cls from './style.module.scss';
 const Filter = ({ filterSelect, handleCheckIsArchive }) => {
 
   const options = [
+    { value: 'default', label: 'По умолчанию' },
     { value: 'cook', label: 'повар' },
     { value: 'waiter', label: 'официант' },
     { value: 'driver', label: 'водитель' },
-    { value: 'default', label: 'По умолчанию' },
   ];
 
   return (

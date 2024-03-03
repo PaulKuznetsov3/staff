@@ -7,7 +7,7 @@ import Filter from '../Filteres';
 import AddHeader from '../AddHeader';
 import { getStaffs } from '../../slices/staffSlice/staffSlice';
 import { toast } from 'react-toastify';
-import { handleFilterStaffs, handleSortStaffs } from '../../utils/getFaff';
+import { handleFilterStaffs, handleSortStaffs } from '../../utils/index';
 import axios from 'axios';
 
 

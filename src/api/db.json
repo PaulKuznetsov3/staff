@@ -2,7 +2,7 @@
   "staffs": [
     {
       "name": "Илья Емельянов",
-      "phone": "+7 (675) 456-54-28",
+      "phone": "+7 (675) 456-54-20",
       "birthday": "12.02.1982",
       "role": "driver",
       "isArchive": false,
@@ -151,6 +151,14 @@
       "birthday": "34.53.4534",
       "role": "",
       "isArchive": true
+    },
+    {
+      "id": "a105",
+      "name": "dfgdfgd",
+      "phone": "+7 (232) 342-34-42",
+      "birthday": "42.35.4345",
+      "role": "waiter",
+      "isArchive": false
     }
   ]
 }

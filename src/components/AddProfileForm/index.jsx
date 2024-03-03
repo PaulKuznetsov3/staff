@@ -27,6 +27,9 @@ const AddProfileForm = () => {
     
   return (
     <div className={cls.container}>
+      <button className={cls.camback} onClick={() => navigate('/')}>
+        назад
+      </button>
       <h2>Профиль нового сотрудника</h2>
       <Form handleSave={handleSave} isSubmitting={isSubmitting}/>
     </div>

@@ -13,23 +13,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
 .select-container {
   position: relative;
   width: 100%;
@@ -54,4 +37,13 @@ input, select, button {
 }
 .checkbox {
   display: flex;
+}
+
+.camback {
+  width: 100px;
+  float: right;
+  margin-right: 10px;
+}
+.camback:hover {
+  background-color: #0056b3;
 }
